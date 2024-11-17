@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* 서브 공통 */
+#content {margin-top: 70px; margin-bottom: 110px;}
+#content .contTit {display: grid; grid-template-columns: 55px auto; height: 55px; background: #fff; border-bottom: 1px solid rgba(0,0,0,.1);}
+#content .contTit .prev {height: 100%; width: 100%; text-align: center;}
+#content .contTit .prev button {background: transparent; border: none; height: auto;}
+#content .contTit .prev button i {color: #c1c1c1; font-size: 22px; line-height: 55px;}
+#content .contTit h2 {line-height: 55px; text-align: center; margin-right: 55px;}
+#content .currCont, #content .currCont2 {padding: 40px 16px;}
+#content .currCont .depth1 > li {margin-bottom: 8px;}
+#content .currCont .depth1 > li > a {border: 1px solid rgba(0,0,0,.3); border-radius: 10px; text-align: center; background: #fff; display: block; padding: 17px 0;}
+#content .currCont .depth2 {display: none;}
+#content .currCont .depth2 > li {width: 100%; text-align: center; background: rgba(0,0,0,.7); color: #fff; border-bottom: 1px solid rgba(255,255,255,.4);}
+#content .currCont .depth2 > li:last-child {border-radius: 0 0 10px 10px; border-bottom: none;} 
+#content .currCont .depth2 > li a {display: block; padding: 17px 0;}
+
+/* intro1 */
+.introContent .introCont li {margin-bottom: 20px;}
+.introContent .introCont h3:before {content: 'ㆍ'; top: 50%; transform: translateY(-50%);}
+.introContent .introCont h3 {border-top: 1px solid #888; background: #e6e6e6; padding: 6px; font-size: 1rem;}
+.introContent .introCont .txtBox {padding: 10px; line-height: 1.4rem; background: #fff;}
+.introContent .introCont .txtBox p {font-size: 0.9rem; color: #666;}
+
+/* login */
+.loginCont {width: 90%; margin: 0 auto;}
+.loginCont .logoImg {text-align: center;}
+.loginCont .logoImg img {width: 130px;}
+.loginCont .loginWrap .loginForm {padding-top: 35px; text-align: center;}
+.loginCont .loginWrap .loginForm fieldset {border: none;}
+.loginCont .loginWrap .loginForm legend {display: none;}
+.loginCont .loginWrap .loginForm input {display: block; width: 100%; padding: 15px 10px; border: 1px solid rgba(0,0,0,.3);}
+.loginCont .loginWrap .loginForm input:nth-of-type(1) {border-bottom: none;}
+.loginCont .loginWrap .loginForm input:focus {outline: 2px solid rgb(0, 140, 255); border: none;}
+.loginCont .loginWrap .loginForm button {display: block; width: 100%; margin-top: 22px; border: none; padding: 17px 0; font-size: 1rem; color: rgba(255,255,255,.5); background: rgba(0,0,0,.2);}
+.loginCont .loginWrap .loginForm.on button {color: rgba(255,255,255,1); background: rgba(0,0,0,.7);}
+.loginCont .joinSearchWrap {text-align: center; padding: 28px 0 20px; font-size: 0.8rem; border-bottom: 1px solid rgba(0,0,0,.15);}
+.loginCont .joinSearchWrap a {padding: 0 10px; position: relative; transition: 1s ease;}
+.loginCont .joinSearchWrap a:before {content: ''; position: absolute; width: 1px; height: 10px; top: 50%; left: 0; transform: translateY(-50%); background: rgba(0,0,0,.3);}
+.loginCont .joinSearchWrap a:first-child:before {display: none;}
+.loginCont .simpleLogin {text-align: center; padding-top: 20px;}
+.loginCont .simpleLogin p {font-size: 0.8rem; color: rgba(0,0,0,.6);}
+.loginCont .simpleLogin .snsIconBox {display: flex; padding: 20px 0;}
+.loginCont .simpleLogin .snsIconBox > a {flex: 1; text-align: center; padding: 10px 0; display: flex; border: 1px solid rgba(0,0,0,.1); margin-left: 5px;}
+.loginCont .simpleLogin .snsIconBox .naver {background: #1ec800; margin-left: 0;}
+.loginCont .simpleLogin .snsIconBox .kakao {background: #ffeb00;}
+.loginCont .simpleLogin .snsIconBox .google {background: #d7dede;}
+.loginCont .simpleLogin .snsIconBox .imgBox {flex: 3;}
+.loginCont .simpleLogin .snsIconBox img {vertical-align: middle; height: 70%;}
+.loginCont .simpleLogin .snsIconBox span {flex: 7; display: inline-block; padding: 2% 4% 0 0; color: #fff; font-weight: bold; font-size: 0.9rem;}
+.loginCont .simpleLogin .snsIconBox .kakao span {color: #3c1e1e;}
+.loginCont .simpleLogin .snsIconBox .google span {color: #444;}
+
+/* join */
+.joinCont {margin: 0 auto;}
+.commonForm fieldset {border: none;}
+.commonForm legend {display: none;}
+.commonForm ul li {padding-bottom: 20px;}
+.joinCont .joinWrap .joinForm input {display: block; width: 100%; padding: 12px 10px; border: 1px solid rgba(0,0,0,.3); margin-top: 4px;}
+.joinCont .joinWrap .joinForm input::placeholder {font-size: 11px;}
+.joinCont .joinWrap .joinForm li button {display: block; width: 100%; padding: 15px 10px; border: none; margin-top: 10px; background: #bcd568; color: #fff; cursor: pointer; font-size: 15px;}
+.commonForm input:focus {outline: 2px solid rgb(0, 140, 255); border: none;}
+.joinCont .joinWrap .joinBtn {display: block; width: 100%; margin-top: 17px; border: none; padding: 17px 0; font-size: 1rem; color: rgba(255,255,255,.5); background: rgba(0,0,0,.2);}
+.joinCont .joinWrap.on .joinBtn {color: rgba(255,255,255,1); background: rgba(0,0,0,.8);}
+
+/* modify */
+.modifyCont {width: 90%; margin: 0 auto;}
+.modifyCont .modifyWrap .modifyForm li {display: flex;}
+.modifyCont .modifyWrap .modifyForm label {flex: 1; padding: 12px 0;}
+.modifyCont .modifyWrap .modifyForm input {flex: 2; display: block; width: 100%; padding: 12px 0; text-indent: 0.5rem; border: 1px solid rgba(0,0,0,.3);}
+.modifyCont .modifyWrap .modifyForm input::placeholder {color: #333;}
+.modifyCont .modifyWrap .modifyForm p {flex: 2; text-align: center;}
+.modifyCont .modifyWrap .modifyForm p a {display: block; width: 120px; padding: 12px 0; background: #444; color: #fff; font-size: 0.8rem; border-radius: 6px;}
+.modifyCont .modifyWrap .btnBox {display: flex;}
+.modifyCont .modifyWrap .btnBox button {margin-top: 17px; padding: 17px 0; font-size: 1rem; width: 100%; cursor: pointer;}
+.modifyCont .modifyWrap .btnBox .changeBtn {color: rgba(255,255,255,1); background: #35a55f; border: none; margin-right: 4px;}
+.modifyCont .modifyWrap .btnBox .resetBtn {border: 1px solid rgba(0,0,0,.2); background: #fff;}
+.modifyCont .modifyWrap .delBtn {margin-top: 35px; display: inline-block; text-align: right; width: 100%; text-decoration: underline; color: rgba(0,0,0,.4); font-size: 0.9rem;}
+
+/* pwModify */
+.pwModifyForm label {display: block; padding-bottom: 4px;}
+.pwModifyForm input {height: 43px; width: 100%; padding: 12px 0; text-indent: 0.5rem; border: 1px solid rgba(0,0,0,.3);}
+
+/* delete */
+.modifyCont .modifyWrap .delForm {text-align: center; padding-top: 1.5rem;}
+.modifyCont .modifyWrap .delForm strong {font-size: 1.2rem; font-weight: normal;}
+.modifyCont .modifyWrap .delForm strong span {color: #0255a1; font-weight: bold;}
+.modifyCont .modifyWrap .delForm p {display: inline-block; padding: 2rem 0 1.5rem; font-weight: bold;}
+
+/* userList */
+.userListCont {margin: 0 auto;}
+.userListCont table th, td {height: 45px; text-align: center; width: 28%; border-top: 1px solid rgba(0,0,0,.5); font-size: 0.9rem;}
+.userListCont table th {background: #666; color: #fff;}
+.userListCont table td {color: #333; border-top: 1px solid rgba(0,0,0,.2);}
+.userListCont table td a {color: #2c9eff; text-decoration: underline; font-weight: bold;}
+.userListCont table th:last-child, td:last-child {width: 44%;}
+.userListCont table tr:last-child td {border-bottom: 1px solid rgba(0,0,0,.5);}
+
+/* userEdit */
+.userEditCont .adminDelBtn {display: inline-block; width: 100%; text-align: center; background: #ddd; 
+	height: 53px; line-height: 53px; margin-top: 9px; color: rgba(0,0,0,.7); border: 1px solid rgba(0,0,0,.1);}
+.userEditCont .adminDelBtn i {color: rgba(0,0,0,.5);}
+
+/* ready */
+#content .readyCont {text-align: center; padding: 90px 0;}
+.readyCont i {font-size: 7rem; color: rgba(0,0,0,.2); animation: ready 8s linear infinite;}
+.readyCont i:last-child {font-size: 2rem;}
+.readyCont h3 {font-size: 1.1rem; padding-top: 22px;}
+@keyframes ready {0% {} 100% {transform: rotate(360deg);}}

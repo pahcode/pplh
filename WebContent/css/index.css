@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+#wrap {font-family: 'Nanum Gothic', sans-serif;}
+.row {padding: 0 10px;}
+
+/* 경고화면 */
+#onlyMobile {position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: #f2f2f4; z-index: 12;
+    display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;}
+#onlyMobile i {font-size: 24px; margin-bottom: 10px; color: rgb(190, 58, 58);}
+#onlyMobile .txtBox h3 {color: rgb(190, 58, 58);}
+#onlyMobile .txtBox p {margin-top: 6px; color: #999; font-size: 0.9rem;}
+@media screen and (max-width: 768px) {
+    #onlyMobile {display: none;}
+}
+
+#header {position: fixed; top: 0; left: 0; width: 100%; height: 70px; z-index: 10;}
+#header .row {background: #fff; display: flex; justify-content: space-between; padding: 0 10px; box-shadow: 0 0 2px 2px rgba(0,0,0,.1);}
+#header h1 {height: 70px; line-height: 70px;}
+#header h1 img {max-height: 60%;}
+#header .navBtn i {font-size: 30px; vertical-align: middle; color: #50ba78; line-height: 70px; cursor: pointer;}
+#header #navWrap {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 11; display: none; background: rgba(0,0,0,.5);}
+#header #navWrap .nav {position: absolute; top: 0; bottom: 0; right: -300px; width: 80%;
+    background: #f2f2f4; box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);}
+#header #navWrap .nav .navScrollWrap {overflow-y: scroll; height: 100%;}
+#header #navWrap .closeBtn {position: absolute; top: 0; left: -50px; font-size: 30px; color: #fff; background: #50ba78; width: 50px; height: 50px; text-align: center; line-height: 50px; cursor: pointer;}
+#header #navWrap .topName {text-align: left; display: flex; justify-content: space-between; background: #fff; font-size: 1rem; font-weight: bold; padding: 18px 20px;}
+#header #navWrap .topName .navLogo {width: 100%; text-align: center;}
+#header #navWrap .topName .navLogo img {width: 60px;}
+#header #navWrap .topName p span {font-weight: normal;}
+#header #navWrap .topName div {color: rgba(0,0,0,.7); letter-spacing: -0.5px; margin-top: 2px;}
+#header #navWrap .topName div i {line-height: 1rem; color: rgba(0,0,0,.2); padding-left: 5px; font-size: 1.3rem;}
+#header #navWrap .topName div span {display: inline-block; line-height: 1rem; vertical-align: middle; margin-top: -6px; font-size: 0.8rem;}
+#header #navWrap .member {display: flex; background: rgba(0,0,0,.6); padding: 16px 0; text-align: center;}
+#header #navWrap .member a {flex: 1;}
+#header #navWrap .member a:first-child {border-right: 1px solid rgba(255,255,255,.2);}
+#header #navWrap .member a i {font-size: 1.5rem; padding-bottom: 7px; color: rgba(255,255,255,.7);}
+#header #navWrap .member a p {font-size: 0.8rem; color: rgba(255,255,255,.9);}
+#header #navWrap .depth1 > li {text-align: left;}
+#header #navWrap .depth1 > li > a {padding: 16px 10px; display: block; border-bottom: 1px solid rgba(0,0,0,.2); position: relative;}
+#header #navWrap .depth1 > li > a > i {position: absolute; top: 50%; transform: translateY(-50%); right: 0; line-height: 1rem; margin-right: 10px;}
+#header #navWrap .depth2 {display: none;}
+#header #navWrap .depth2 > li {border-bottom: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); font-size: 0.9rem;}
+#header #navWrap .depth2 > li > a {display: block; padding: 16px 20px;}
+#header #navWrap .depth1 > li.on > a {font-weight: bold;}
+#header #navWrap .depth1 > li.on > a > i {color: #50ba78; transform: translateY(-50%) rotate(180deg);}
+
+
+/* .mainContent {padding: 13px; margin-bottom: 110px; margin-top: 70px;} */
+.mainContent .mainVis {width: 100%; height: 170px;
+    background-image: url(../img/main01.jpg); background-size: cover; background-position: 0 center; 
+    position: relative; margin-bottom: 15px;}
+.mainContent .mainVis:before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.1);}
+.mainContent .mainVis .txtBox {position: absolute; right: 0; text-align: right; color: #fff; padding: 15px; letter-spacing: -1px;}
+.mainContent .mainVis .txtBox h2 {font-size: 50px; font-family: 'Nanum Brush Script', cursive; font-weight: normal;}
+.mainContent .introWrap {height: 220px; display: flex; margin-bottom: 20px;}
+.mainContent .introWrap .intro {background: #f00; height: 100%; flex: 1; padding: 15px; color: #fff; background-image: url(../img/main02.jpg); background-size: cover; background-position: center center; position: relative;}
+.mainContent .introWrap .intro:before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.15);}
+.mainContent .introWrap .intro .txtBox {margin-top: 15px; position: relative;}
+.mainContent .introWrap .intro .txtBox span {position: relative; display: inline-block; padding-bottom: 3px;}
+.mainContent .introWrap .intro .txtBox span:before {content: ''; position: absolute; left: 0; top: -15px; width: 30px; height: 3px; background: #fff; display: inline-block;}
+.mainContent .introWrap .appBis {flex: 1; height: 100%;}
+.mainContent .introWrap .appBis img {width: 50px; margin-bottom: 10px;}
+.mainContent .introWrap .appBis h3 {font-size: 1rem; color: #fff; font-weight: 900;}
+.mainContent .introWrap .appBis > div {position: relative;}
+.mainContent .introWrap .appBis > div .contBox {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%; font-size: 1rem;}
+.mainContent .introWrap .appBis .app {background: #a4cb50; height: 50%; border-left: 10px solid #f2f2f4; border-bottom: 10px solid #f2f2f4;}
+.mainContent .introWrap .appBis .bisiness {background: #50ba78; height: 50%; border-left: 10px solid #f2f2f4;}
+.mainContent .quickMenu {display: flex; height: 55px; padding: 0 10px;}
+.mainContent .quickMenu a {flex: 1; background: rgba(125, 137, 99, .2); line-height: 55px; color: #666; text-align: center; letter-spacing: -1px; font-size: 1rem; position: relative;}
+.mainContent .quickMenu a i {font-size: 0.9rem;}
+.mainContent .quickMenu a:first-child {border-radius: 50px 0 0 50px;}
+.mainContent .quickMenu a:first-child:before {content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 100%; border-right: 1px solid rgba(0,0,0,.15); height: 23px; margin-top: 16px;}
+.mainContent .quickMenu a:last-child {border-radius: 0 50px 50px 0;}
+.mainContent .quickMenu a:last-child:before {content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 100%; border-left: 1px solid rgba(0,0,0,.15); height: 23px; margin-top: 16px;}
+
+#footer {position: fixed; width: 100%; height: 110px; bottom: 0; z-index: 9;}
+#footer .iconMenu {display: flex; justify-content: space-around; height: 100%; background: #fff; padding: 13px 0; text-align: center; box-shadow: 0 0 2px 2px rgba(0,0,0,.1);}
+#footer .iconMenu a {display: block;}
+#footer .iconMenu a div {width: 60px; height: 60px; background: #50ba78; border-radius: 50%; margin-bottom: 5px; position: relative; overflow: hidden; text-align: center;}
+#footer .iconMenu a div:before {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 50%; background: rgba(0,0,0,.2);}
+#footer .iconMenu a div img {position: relative; display: inline-block; width: 30px; top: 15px;}
+
