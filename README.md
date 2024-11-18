@@ -1,5 +1,5 @@
-- LH한국토지주택공사<br>
-DB연동 회원가입 구현<br><br>
+<h2>LH한국토지주택공사</h2><br>
+<i>- DB연동 회원가입 구현</i><br><br>
 
 작업기간: 2020.9.11 ~ 10.7 / 2022.1.23 ~ 2.2<br>
 사용기술: Eclipse, JSP, JDBC, MySQL, Tomcat<br>
